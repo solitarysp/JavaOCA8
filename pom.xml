@@ -7,10 +7,14 @@
     <artifactId>JavaOCA8</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
-    <modules>
-        <module>Chap1JavaBuildingBlocks</module>
-    </modules>
-
+    <profiles>
+        <profile>
+            <id>Chap1</id>
+            <modules>
+                <module>Chap1JavaBuildingBlocks</module>
+            </modules>
+        </profile>
+    </profiles>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
