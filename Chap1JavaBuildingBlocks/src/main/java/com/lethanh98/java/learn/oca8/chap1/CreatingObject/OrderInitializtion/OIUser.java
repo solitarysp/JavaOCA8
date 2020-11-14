@@ -11,6 +11,13 @@ public class OIUser extends OIBase {
     {
         System.out.println("tuổi là"+age);
     }
+   static  {
+        System.out.println("staic 1");
+    }
+    static  {
+        System.out.println("staic 2");
+
+    }
 
     public OIUser() {
     }
