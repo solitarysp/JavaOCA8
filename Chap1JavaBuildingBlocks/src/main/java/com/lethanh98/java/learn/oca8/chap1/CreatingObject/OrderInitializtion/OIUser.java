@@ -16,7 +16,7 @@ public class OIUser extends OIBase {
     }
 
     String name;
-    
+
     public OIUser(String name) {
         System.out.println("khởi tạo name");
         this.name = name;
