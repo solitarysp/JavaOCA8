@@ -6,7 +6,7 @@ public class Main {
         User user = new User();
         user.age = 1; // set giá  trị
         System.out.println(user.age); // đọc giá trị
-
+        System.out.println(Long.MIN_VALUE);
     }
 
 }
