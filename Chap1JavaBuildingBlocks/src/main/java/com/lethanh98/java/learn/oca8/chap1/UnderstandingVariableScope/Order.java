@@ -19,6 +19,7 @@ public class Order {
             {
                 System.out.println(maxNumberAutoPay); // biến nằm trong block nên có thể truy cập
             }
+            Runtime.getRuntime().gc();
 
             if(maxNumberAutoPay<5) {
                 System.out.println("thanh toan "+ maxNumberAutoPay); // Block thấp hơn có thể truy cập vào block cao hơn
