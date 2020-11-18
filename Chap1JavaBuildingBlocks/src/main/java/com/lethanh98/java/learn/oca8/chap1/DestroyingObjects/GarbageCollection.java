@@ -11,4 +11,9 @@ public class GarbageCollection {
         // khi đến thời điểm này thì object fullName có thể được GC
         this.name = name;
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
 }
