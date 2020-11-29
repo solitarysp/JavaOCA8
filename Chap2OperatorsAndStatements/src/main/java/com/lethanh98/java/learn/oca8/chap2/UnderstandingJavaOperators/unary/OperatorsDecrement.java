@@ -1,14 +1,16 @@
 package com.lethanh98.java.learn.oca8.chap2.UnderstandingJavaOperators.unary;
 
+import com.lethanh98.java.learn.oca8.chap2.Operators;
+
 /**
  * Toán tử Decrement(--) sử dụng để giảm 1 giá trị. có 2 cách để sử dụng là Post-Decrement operator và Pre-Decrement operator
  * !(operand)
  * Chỉ có tác dụng với boolean
  */
-public class UnaryOperatorsDecrement implements UnaryOperators {
+public class OperatorsDecrement implements Operators {
     public static void main(String[] args) {
-        UnaryOperators unaryOperators = new UnaryOperatorsDecrement();
-        unaryOperators.run();
+        Operators operators = new OperatorsDecrement();
+        operators.run();
     }
 
     @Override

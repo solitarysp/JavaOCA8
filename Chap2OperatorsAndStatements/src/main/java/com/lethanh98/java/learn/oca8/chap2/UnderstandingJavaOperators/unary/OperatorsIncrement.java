@@ -1,14 +1,16 @@
 package com.lethanh98.java.learn.oca8.chap2.UnderstandingJavaOperators.unary;
 
+import com.lethanh98.java.learn.oca8.chap2.Operators;
+
 /**
  * Toán tử Increment(++) sử dụng để tăng 1 giá trị. có 2 cách để sử dụng là Post-increment operator và Pre-increment operator
  * !(operand)
  * Chỉ có tác dụng với boolean
  */
-public class UnaryOperatorsIncrement implements UnaryOperators {
+public class OperatorsIncrement implements Operators {
     public static void main(String[] args) {
-        UnaryOperators unaryOperators = new UnaryOperatorsIncrement();
-        unaryOperators.run();
+        Operators operators = new OperatorsIncrement();
+        operators.run();
     }
 
     @Override

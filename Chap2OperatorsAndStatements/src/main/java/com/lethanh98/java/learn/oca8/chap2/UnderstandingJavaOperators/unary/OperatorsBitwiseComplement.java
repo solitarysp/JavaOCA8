@@ -1,13 +1,15 @@
 package com.lethanh98.java.learn.oca8.chap2.UnderstandingJavaOperators.unary;
 
+import com.lethanh98.java.learn.oca8.chap2.Operators;
+
 /**
  * Toán tử Bitwise Complement(~) sẽ đảo ngược lại tấ cả bit của biến. Ví dụ biến a có giá trị là 5 = bit 101
  * Khi sử dụng ~5 thì bit sẽ đảo ngược thành 010 = 2
  */
-public class UnaryOperatorsBitwiseComplement implements UnaryOperators {
+public class OperatorsBitwiseComplement implements Operators {
     public static void main(String[] args) {
-        UnaryOperators unaryOperators = new UnaryOperatorsBitwiseComplement();
-        unaryOperators.run();
+        Operators operators = new OperatorsBitwiseComplement();
+        operators.run();
     }
 
     @Override
