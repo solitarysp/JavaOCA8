@@ -14,10 +14,13 @@
                 <module>Chap1JavaBuildingBlocks</module>
             </modules>
         </profile>
+        <profile>
+            <id>Chap2</id>
+            <modules>
+                <module>Chap2OperatorsAndStatements</module>
+            </modules>
+        </profile>
     </profiles>
-    <modules>
-        <module>Chap2OperatorsAndStatements</module>
-    </modules>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
