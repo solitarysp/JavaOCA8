@@ -17,7 +17,13 @@ public class CastingPrimitiveValues implements Operators {
     @Override
     public void run() {
         example1();
+        example2();
         OverflowAndUnderflow();
+    }
+
+    private void example2() {
+        int a = 1;
+        long b = a;
     }
 
     private void OverflowAndUnderflow() {

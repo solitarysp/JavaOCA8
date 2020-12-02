@@ -24,6 +24,18 @@ public class AssignmentOperators implements Operators {
 
     private void example1() {
         int x = 3; // Câu lệnh chỉ định với x được gán vault là 3
+        log.info("Assignment  int x = 3 | {}", x);
+        x += 3;
+        log.info("Assignment Incrementation x += 3 | {}", x);
+        x -= 3;
+        log.info("Assignment Decrementation x -= 3 | {}", x);
+        x *= 3;
+        log.info("Assignment Multiplication x *= 3 | {}", x);
+        x /= 3;
+        log.info("Assignment Division x /= 3 | {}", x);
+        x %= 3;
+        log.info("Assignment Division x %= 3 | {}", x);
+
     }
 
     /**
