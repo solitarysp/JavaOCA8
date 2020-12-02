@@ -7,6 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 /**
  * https://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.1.3
+ * https://www.rapidtables.com/convert/number/decimal-to-binary.html
+ * https://www.calculator.net/binary-calculator.html?number1=01111111111111111111111111111111&c2op=%2B&number2=1&calctype=op&x=69&y=7
+ *
  */
 public class CastingPrimitiveValues implements Operators {
     public static void main(String[] args) {
@@ -18,7 +21,36 @@ public class CastingPrimitiveValues implements Operators {
     public void run() {
         example1();
         example2();
+        exampleCaseMissData();
+        autoCase();
+        notAutoCase();
         OverflowAndUnderflow();
+    }
+
+    /**
+     *  * https://www.rapidtables.com/convert/number/decimal-to-binary.html
+     *  * https://www.calculator.net/binary-calculator.html?number1=01111111111111111111111111111111&c2op=%2B&number2=1&calctype=op&x=69&y=7
+     */
+    private void exampleCaseMissData() {
+        log.info("===============================================exampleCaseMissData===================");
+
+        long a = Long.MAX_VALUE; // ==  9223372036854775807 = 1111111111111111111111111111111111111111111111111111111111111111
+        int c = (int) a; // 32 bit = 11111111111111111111111111111111 (Cắt bit cuối lấy 32 bit đầu) = 4294967295 = -1
+        log.info("long {} to int {}",a,c);
+    }
+
+    private void notAutoCase() {
+        short a = 1;
+        byte b = (byte) a;
+        char c = (char) a;
+
+    }
+
+    private void autoCase() {
+        byte a = 1;
+        short b = a;
+        int c = a;
+        long d = b;
     }
 
     private void example2() {
