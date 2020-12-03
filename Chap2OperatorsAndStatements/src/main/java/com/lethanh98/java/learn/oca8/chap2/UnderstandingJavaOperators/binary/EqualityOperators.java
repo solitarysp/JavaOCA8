@@ -40,6 +40,8 @@ public class EqualityOperators implements Operators {
     }
 
     private void exampleError() {
+        log.info("===============================================exampleError===================");
+
         //  boolean a = 1 == true;
     }
 

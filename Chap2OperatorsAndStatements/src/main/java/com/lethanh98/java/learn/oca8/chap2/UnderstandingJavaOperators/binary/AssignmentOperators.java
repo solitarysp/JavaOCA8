@@ -23,6 +23,7 @@ public class AssignmentOperators implements Operators {
     }
 
     private void example1() {
+        log.info("===========================example1=======================");
         int x = 3; // Câu lệnh chỉ định với x được gán vault là 3
         log.info("Assignment  int x = 3 | {}", x);
         x += 3;
@@ -43,6 +44,7 @@ public class AssignmentOperators implements Operators {
      * Nhưng sẽ có 1 lỗi error nếu chúng ta cố gắng chuyển đổi một kiểu dữ liệu lớn hơn sang nhỏ hơn. long < int
      */
     private void example2() {
+        log.info("===========================example2=======================");
         int a = 30000000;
         long b = a; // OK bình thường vì từ nhỏ đến lớn.
 //        int c = b; // Lỗi compiler vì không thể từ lớn đến nhỏ

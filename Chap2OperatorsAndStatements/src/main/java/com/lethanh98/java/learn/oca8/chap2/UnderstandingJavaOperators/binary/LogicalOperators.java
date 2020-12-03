@@ -20,18 +20,14 @@ public class LogicalOperators implements Operators {
         example4();
     }
 
-    private void example4() {
-        String a = null;
-        if(a != null & a.indexOf("1") > 0){
-            log.info("Yes");
+    private void example1() {
+        log.info("====================example1====================");
+        if (example1_Method1() & example1_Method2()) {
+            log.info("Done 1");
         }
-    }
-
-    private void example3() {
-        if (true ^ false) {
-            System.out.println("yes");
+        if (example1_Method1() && example1_Method2()) {
+            log.info("Done 2");
         }
-
     }
 
     private void example2() {
@@ -47,16 +43,17 @@ public class LogicalOperators implements Operators {
         }
     }
 
-    private void example1() {
-        log.info("====================example1====================");
-        log.info("====================example1_Method1() & example1_Method2()====================");
-        if (example1_Method1() & example1_Method2()) {
-            log.info("DOne 1");
+    private void example3() {
+        if (true ^ false) {
+            System.out.println("yes");
         }
-        log.info("====================example1_Method1() && example1_Method2()====================");
 
-        if (example1_Method1() && example1_Method2()) {
-            log.info("Done 2");
+    }
+
+    private void example4() {
+        String a = null;
+        if (a != null & a.indexOf("1") > 0) {
+            log.info("Yes");
         }
     }
 

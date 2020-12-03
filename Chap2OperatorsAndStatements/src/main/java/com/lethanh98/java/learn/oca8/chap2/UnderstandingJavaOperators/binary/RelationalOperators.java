@@ -17,13 +17,6 @@ public class RelationalOperators implements Operators {
         example2();
     }
 
-    private void example2() {
-        Operators operators = new RelationalOperators();
-        if (operators instanceof RelationalOperators) {
-            log.info("đúng operators instanceof RelationalOperators");
-        }
-    }
-
     private void example1() {
         log.info("================example1===========");
         int x = 10, y = 10;
@@ -33,5 +26,15 @@ public class RelationalOperators implements Operators {
         log.info(" x > y  --> {} >  {}: {}", x, y, x > y);
         log.info(" x >= y --> {} >= {}: {}", x, y, x >= y);
     }
+
+    private void example2() {
+        log.info("====================example2====================");
+
+        Operators operators = new RelationalOperators();
+        if (operators instanceof RelationalOperators) {
+            log.info("đúng operators instanceof RelationalOperators");
+        }
+    }
+
 
 }

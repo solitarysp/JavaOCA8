@@ -14,11 +14,21 @@ public class ifThenStatement implements Operators {
 
     @Override
     public void run() {
+        example0(13);
         example1(13);
         example2(13);
         example3(13);
     }
 
+    private void example0(int number) {
+        if (number < 11)
+
+
+
+        log.info("< 11");
+        log.info("LeThanh");
+        log.info("LeThanh2");
+    }
     private void example1(int number) {
         if (number < 11)
             log.info("< 11");
@@ -41,8 +51,8 @@ public class ifThenStatement implements Operators {
             log.info("< 11");
         else
             log.info("> 11");
-
     }
+    // Lỗi không bảo giờ chạy 1 số else vì nếu vào elese đó thì điều kiện trước đã vào
     private void example4(int number) {
         if (number < 11)
             log.info("< 11");
