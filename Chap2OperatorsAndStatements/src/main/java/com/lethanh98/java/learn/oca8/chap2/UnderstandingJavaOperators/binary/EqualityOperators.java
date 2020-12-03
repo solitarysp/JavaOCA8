@@ -14,36 +14,33 @@ public class EqualityOperators implements Operators {
     @Override
     public void run() {
         example1();
-        example2();
+        exampleWithObject();
         exampleError();
     }
 
-    private void exampleError() {
-      //  boolean a = 1 == true;
-    }
-
-    private void example2() {
-        log.info("===================example2===================");
+    private void exampleWithObject() {
+        log.info("==================exampleWithObject====================");
         String a = "a";
         String b = new String("a");
-        if(a == b ){
-            log.info("a == b");
+        log.info("a == b = {}", a == b);// So sánh địa chỉ bộ nhớ
+        log.info("a.equals(b) = {}", a.equals(b));// So sánh giá trị bộ nhớ
+    }
+    private void example1() {
+
+        log.info("===================example1===================");
+        if (5 == 5.000000000001f) {
+            log.info("5 == 5.000000000001f");
         }
-        if(true == true ){
-            log.info("true == true");
+        if (5 == 5.0001f) {
+            log.info("5 == 5.0001f");
+        }
+        if (5 == 5.1) {
+            log.info("5 == 5.1");
         }
     }
 
-    private void example1() {
-        if (5 == 5.000000000001f) {
-            System.out.println("Yes");
-        }
-        if (5 == 5.0001f) {
-            System.out.println("yes");
-        }
-        if (5 == 5.1) {
-            System.out.println("yes");
-        }
+    private void exampleError() {
+        //  boolean a = 1 == true;
     }
 
 
