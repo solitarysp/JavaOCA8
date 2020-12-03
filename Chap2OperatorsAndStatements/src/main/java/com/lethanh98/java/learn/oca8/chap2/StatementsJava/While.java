@@ -19,6 +19,7 @@ public class While implements Operators {
     }
 
     private void exampleInfiniteLoops() {
+        log.info("=====================exampleInfiniteLoops==================");
         while (true) {
             int a = 1;
         }

@@ -1,0 +1,74 @@
+package com.lethanh98.java.learn.oca8.chap2.StatementsJava;
+
+import com.lethanh98.java.learn.oca8.chap2.Operators;
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.Arrays;
+import java.util.List;
+
+
+@Slf4j
+
+public class For implements Operators {
+    public static void main(String[] args) {
+        Operators operators = new For();
+        operators.run();
+    }
+
+    @Override
+    public void run() {
+        example1();
+        example2();
+        example3();
+        example4(Arrays.asList("1","2"));
+       // example5();
+    }
+
+    private void example4(List<String> strings) {
+        log.info("=====================example4==================");
+        for (String s:strings) {
+            log.info("{}", s);
+        }
+    }
+
+    private void example3() {
+        log.info("=====================example3==================");
+
+        String[] names = new String[3];
+        for (String name : names) {
+            log.info("{}", name);
+        }
+
+    }
+
+    // khởi tạo nhiều giá trị
+    private void example2() {
+        log.info("=====================example2==================");
+        int x = 0;
+        for (long y = 0, z = 4; x < 5 && y < 10; x++, y++) {
+            log.info("RUn");
+        }
+    }
+
+    private void example1() {
+        log.info("=====================example1==================");
+        for (StringBuilder i = new StringBuilder(); i.indexOf("end") < 0; ) {
+            log.info("vòng lặp chạy");
+            i.append("end");
+        }
+    }
+
+    private void example5() {
+        log.info("=====================example5==================");
+        int a = 1;
+        for (; a < 3; ) {
+            log.info("a < 3 : a is {}", a);
+            a++;
+        }
+        // chạy vô tận
+        for (; ; ) {
+            log.info("example5");
+        }
+    }
+
+}

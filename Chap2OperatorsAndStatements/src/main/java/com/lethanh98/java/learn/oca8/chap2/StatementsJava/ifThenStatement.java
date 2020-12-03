@@ -21,6 +21,8 @@ public class ifThenStatement implements Operators {
     }
 
     private void example0(int number) {
+        log.info("=====================example0==================");
+
         if (number < 11)
 
 
@@ -30,6 +32,8 @@ public class ifThenStatement implements Operators {
         log.info("LeThanh2");
     }
     private void example1(int number) {
+        log.info("=====================example1==================");
+
         if (number < 11)
             log.info("< 11");
         log.info("LeThanh");
@@ -38,6 +42,8 @@ public class ifThenStatement implements Operators {
     }
 
     private void example2(int number) {
+        log.info("=====================example2==================");
+
         if (number < 11) {
             log.info("< 11");
             log.info("LeThanh");
@@ -47,6 +53,7 @@ public class ifThenStatement implements Operators {
 
     }
     private void example3(int number) {
+        log.info("=====================example3==================");
         if (number < 11)
             log.info("< 11");
         else
@@ -54,6 +61,8 @@ public class ifThenStatement implements Operators {
     }
     // Lỗi không bảo giờ chạy 1 số else vì nếu vào elese đó thì điều kiện trước đã vào
     private void example4(int number) {
+        log.info("=====================example4==================");
+
         if (number < 11)
             log.info("< 11");
         else
