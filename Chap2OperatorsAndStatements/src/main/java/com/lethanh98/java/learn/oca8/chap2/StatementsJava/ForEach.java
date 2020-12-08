@@ -17,44 +17,21 @@ public class ForEach implements Operators {
 
     @Override
     public void run() {
-        example3();
-        example4(Arrays.asList("1", "2"));
-        example5();
+        example1();
+        example2(Arrays.asList("1", "2"));
     }
-
-
-    private void example3() {
-        log.info("=====================example3==================");
+    private void example1() {
+        log.info("=====================example1==================");
         String[] names = new String[2];
         for (String name : names) {
-            log.info("{}", name);
+            log.info("Log");
         }
-
     }
 
-    private void example4(List<String> strings) {
-        log.info("=====================example4==================");
+    private void example2(List<String> strings) {
+        log.info("=====================example2==================");
         for (String s : strings) {
             log.info("{}", s);
         }
     }
-
-    private void example5() {
-        log.info("=====================example5==================");
-        int a = 1;
-        for (; a < 3; ) {
-            log.info("a < 3 : a is {}", a);
-            a++;
-        }
-
-    }
-
-    private void example6() {
-        log.info("=====================example6==================");
-        // chạy vô tận
-        for (; ; ) {
-            log.info("example5");
-        }
-    }
-
 }
