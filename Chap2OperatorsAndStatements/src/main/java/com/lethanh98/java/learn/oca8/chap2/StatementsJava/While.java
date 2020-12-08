@@ -5,7 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 
 
 @Slf4j
-
+/**
+ * Với While: Chúng ta sẽ kiểm tra điều kiện trước sau đo sẽ chạy block mã.
+ * Sau khi chạy xong block mã chúng ta sẽ tiếp tục check lại điều kiện và chạy lại cho đến khi điều kiện là false
+ */
 public class While implements Operators {
     public static void main(String[] args) {
         Operators operators = new While();
@@ -15,7 +18,8 @@ public class While implements Operators {
     @Override
     public void run() {
         example1();
-        exampleInfiniteLoops();
+        //   exampleInfiniteLoops();
+        example2();
     }
 
     private void exampleInfiniteLoops() {
@@ -34,5 +38,10 @@ public class While implements Operators {
         }
     }
 
-
+    private void example2() {
+        log.info("=====================example2==================");
+        int a = 1;
+        while (a > 0)
+            log.info("A > 1", a = 0);
+    }
 }
