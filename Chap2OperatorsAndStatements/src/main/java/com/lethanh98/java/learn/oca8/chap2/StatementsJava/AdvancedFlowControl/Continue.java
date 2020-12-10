@@ -8,9 +8,9 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * Label được sử dụng để gắn Label cho các Statement trong java. 
  */
-public class Labels implements Operators {
+public class Continue implements Operators {
     public static void main(String[] args) {
-        Operators operators = new Labels();
+        Operators operators = new Continue();
         operators.run();
     }
 
@@ -21,12 +21,12 @@ public class Labels implements Operators {
 
     private void example1() {
         OUTER_LOOP:
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 3; i++) {
             log.info("i {}", i);
             INNER_LOOP:
-            for (int j = 0; j < 1; j++) {
+            for (int j = 0; j < 1000; j++) {
                 log.info("j {}", j);
-                break OUTER_LOOP;
+                continue ;
             }
         }
     }
