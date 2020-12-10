@@ -65,14 +65,14 @@ public class Chap2 implements Operators {
     }
 
     /**
-     *
+     *Lúc compiler java sẽ tự động convert xuống
      */
     private void question19() {
         int a = (int) 1000.0000000000000000000000000000000000000000000001f;
         long b = (long) 100000000000000000000000000000000000000000000.000000000000000000000000000000000001d;
         log.info("{}", a);
     }
-
+// Vì ; là kết thúc 1 câu, vì vậy ở dong 80 java sẽ kết thúc cấu lệnh mà không có body là dòng 81
     private void question20() {
         int number = 5;
         if (number > 6 && number < 10) log.info("number > 6 and");
