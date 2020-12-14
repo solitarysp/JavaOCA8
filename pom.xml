@@ -20,6 +20,12 @@
                 <module>Chap2OperatorsAndStatements</module>
             </modules>
         </profile>
+        <profile>
+            <id>Chap3</id>
+            <modules>
+                <module>Chap3CoreJavaApis</module>
+            </modules>
+        </profile>
     </profiles>
     <dependencies>
         <dependency>
@@ -52,4 +58,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
