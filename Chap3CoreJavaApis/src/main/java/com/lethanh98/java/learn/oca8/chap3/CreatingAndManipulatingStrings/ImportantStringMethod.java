@@ -19,10 +19,55 @@ public class ImportantStringMethod implements BaseInterface {
         substringError();
         toLowerCaseAndToUpperCase();
         equalsAbdEqualsIgnoreCase();
+        startsWithAndEndsWith();
+        contains();
+        replace();
+        trim();
+        MethodChaining();
+    }
+
+    private void MethodChaining() {
+        log.info(BASE_LOG, "MethodChaining");
+        String a = "                     LeThanh1998                         ";
+        a =  a.trim().replace("1998","2000");
+        log.info("MethodChaining : {}",a);
+    }
+
+    private void trim() {
+        log.info(BASE_LOG, "trim");
+        String a = "                     LeThanh1998                         ";
+        a = a.trim();
+    }
+
+    private void replace() {
+        log.info(BASE_LOG, "replace");
+        String a = "LeThanh1998";
+        a = a.replace("Thanh", "THANH");
+        log.info("{}",a);
+    }
+
+    private void contains() {
+        log.info(BASE_LOG, "contains");
+        String a = "LeThanh1998";
+        log.info("startsWith offset{}", a.contains("Th"));
+
+    }
+
+    private void startsWithAndEndsWith() {
+        log.info(BASE_LOG, "startsWithAndEndsWith");
+        String a = "LeThanh1998";
+        log.info("startsWith offset{}", a.startsWith("L", 0));
+        log.info("startsWith {}", a.startsWith("Le"));
+        log.info("endsWith {}", a.endsWith("1998"));
     }
 
     private void equalsAbdEqualsIgnoreCase() {
         log.info(BASE_LOG, "equalsAbdEqualsIgnoreCase");
+        String a = "TesT";
+        String b = "test";
+        String c = "test";
+        log.info("equals : {}", b.equals(c));
+        log.info("equalsIgnoreCase : {}", a.equalsIgnoreCase(b));
 
     }
 
