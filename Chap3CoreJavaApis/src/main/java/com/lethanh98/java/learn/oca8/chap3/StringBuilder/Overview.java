@@ -14,6 +14,22 @@ public class Overview implements BaseInterface {
     public void run() {
         example_TaoQuaNhieuString();
         example_StringBuilder();
+        example_StringBuilderChain();
+        example_CreatingStringBuilderThere();
+    }
+
+    private void example_CreatingStringBuilderThere() {
+        log.info(BASE_LOG, "example_CreatingStringBuilderThere");
+        StringBuilder id = new StringBuilder();
+        StringBuilder id1 = new StringBuilder("Thanh");
+        StringBuilder id2 = new StringBuilder(10);
+    }
+
+    private void example_StringBuilderChain() {
+        log.info(BASE_LOG, "example_StringBuilderChain");
+        StringBuilder id = new StringBuilder();
+        id.append("1").append("2").append(3).append("4");
+
     }
 
     private void example_StringBuilder() {

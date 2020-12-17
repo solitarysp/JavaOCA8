@@ -4,6 +4,7 @@ import com.lethanh98.java.learn.oca8.chap3.BaseInterface;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Field;
+import java.util.UUID;
 
 @Slf4j
 /**
@@ -13,6 +14,7 @@ import java.lang.reflect.Field;
  *               Nếu 1 trong 2 toán hàng là chuỗi. + được hiểu là phép nối chuỗi
  *               Việc đánh giá và chạy biểu thức được thực hiện từ trái qua phải
  */
+
 public class StringPoll implements BaseInterface {
     public static void main(String[] args) {
         BaseInterface baseInterface = new StringPoll();
