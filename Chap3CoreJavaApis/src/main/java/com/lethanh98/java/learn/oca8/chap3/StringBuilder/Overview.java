@@ -4,6 +4,7 @@ import com.lethanh98.java.learn.oca8.chap3.BaseInterface;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@SuppressWarnings("all")
 public class Overview implements BaseInterface {
     public static void main(String[] args) {
         BaseInterface baseInterface = new Overview();
@@ -20,8 +21,12 @@ public class Overview implements BaseInterface {
 
     private void example_CreatingStringBuilderThere() {
         log.info(BASE_LOG, "example_CreatingStringBuilderThere");
+        // Tạo 1 StringBuilder default với capacity 16
         StringBuilder id = new StringBuilder();
+        // Tạo một StringBuilder giá trị khởi đầu là giá trị truyền vào
+        // Capacity mặc định = length String input + 16
         StringBuilder id1 = new StringBuilder("Thanh");
+        // Tạo  một StringBuilder với capacity khởi điểm  = 16
         StringBuilder id2 = new StringBuilder(10);
     }
 
