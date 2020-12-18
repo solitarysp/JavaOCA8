@@ -4,7 +4,6 @@ import com.lethanh98.java.learn.oca8.chap3.BaseInterface;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Field;
-import java.util.UUID;
 
 @Slf4j
 /**
@@ -25,6 +24,35 @@ public class StringPoll implements BaseInterface {
     public void run() {
         example();
         example2();
+        example3();
+        example4();
+        example5();
+    }
+    static String string5Example="Le";
+    private void example5() {
+        log.info(BASE_LOG, "example5");
+        final String b = "Thanh"; // Trong pool
+        final String c = "LeThanh"; // Trong pool
+        final String d = string5Example + b; // string5Example không phải final nên không đc vào constant
+        log.info("{}", c == d);
+    }
+
+    private void example4() {
+        log.info(BASE_LOG, "example4");
+        final String a = "Le"; // Trong pool
+        final String b = "Thanh"; // Trong pool
+        final String c = "LeThanh"; // Trong pool
+        final String d = a + b; // đc đưa vào pool vì 2 data sử dụng để + là constant
+        log.info("{}", c == d);
+    }
+
+    private void example3() {
+        log.info(BASE_LOG, "example3");
+        String a = "Le"; // Trong pool
+        String b = "Thanh"; // Trong pool
+        String c = "LeThanh"; // Trong pool
+        String d = a + b; // Không được cho vào String poll vì, A và B không phải constan
+        log.info("{}", c == d);
     }
 
     private void example2() {
@@ -35,9 +63,9 @@ public class StringPoll implements BaseInterface {
             String s2 = "Testtttt";
             Field field = String.class.getDeclaredField("value");
             field.setAccessible(true);
-            field.set(s,"1".toCharArray()); // Set is 1
-            log.info("{}",s); // SHow is 1
-            log.info("{}",s2);// SHow is 1
+            field.set(s, "1".toCharArray()); // Set is 1
+            log.info("{}", s); // SHow is 1
+            log.info("{}", s2);// SHow is 1
             String s3 = "Testtttt"; // vẫn là 1
             log.info("{}", s3);
 
