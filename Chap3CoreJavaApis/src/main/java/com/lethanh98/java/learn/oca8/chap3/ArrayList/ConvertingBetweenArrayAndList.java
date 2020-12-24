@@ -24,7 +24,8 @@ public class ConvertingBetweenArrayAndList implements BaseInterface {
     }
 
     /**
-     * Khi sử dụng  Arrays.asList để chuyển một array đến List thì List đó không thể sử đổi, không xóa hay thêm mới đc
+     * Khi sử dụng  Arrays.asList để chuyển một array đến List thì List đó không thể sử đổi, không xóa hay thêm mới đc chỉ chỉnh sửa index đc.
+     * Ví dụ chỉ sửa giá trị ở 1 index thì ok, chứ thê hay xóa thì k đc nói đơn giản nó là fsixed-size
      *  Bởi vì nó sẽ tạo một ArrayList, nhưng ArrayList này là ArrayList trong Arrays chứ k phải ArrayList bình thường
      *  ArrayList đó không impl add hay remove.. nên dùng sẽ gọi đến AbstractList nên sẽ lỗi
      */
