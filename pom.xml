@@ -26,6 +26,12 @@
                 <module>Chap3CoreJavaApis</module>
             </modules>
         </profile>
+        <profile>
+            <id>Chap4</id>
+            <modules>
+                <module>Chap4MethodsAndEncapsulation</module>
+            </modules>
+        </profile>
     </profiles>
     <dependencies>
         <dependency>
