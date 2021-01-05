@@ -20,6 +20,12 @@ public class StudentPro extends Student {
         log.info("{}", studentPro.name);
 
     }
+    public void showByMethodSubclassRefClassCha() {
+        Student studentPro = new StudentPro();
+        // không thể call từ Student vì không cùng Student
+    //    studentPro.setName("f");
+
+    }
 
     void showName() {
         //  log.info("{}",student.name);
