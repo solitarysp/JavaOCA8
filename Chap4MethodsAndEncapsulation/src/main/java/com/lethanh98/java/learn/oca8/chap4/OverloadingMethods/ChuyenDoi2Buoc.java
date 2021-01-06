@@ -8,7 +8,7 @@ public class ChuyenDoi2Buoc {
         setAge(1);
         setAge(1L);
     }
-
+    int A;
     public static void setAge(Long a) {
         log.info("Long");
     }
