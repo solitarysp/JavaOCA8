@@ -32,6 +32,12 @@
                 <module>Chap4MethodsAndEncapsulation</module>
             </modules>
         </profile>
+        <profile>
+            <id>Chap5</id>
+            <modules>
+                <module>Chap5ClassDesign</module>
+            </modules>
+        </profile>
     </profiles>
     <dependencies>
         <dependency>
