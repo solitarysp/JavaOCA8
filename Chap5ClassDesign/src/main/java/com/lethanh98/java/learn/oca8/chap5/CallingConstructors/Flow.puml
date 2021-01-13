@@ -1,0 +1,11 @@
+@startuml
+Main -> new_B: new B();
+new_B --> B_Constructors: Gọi đến Constructor của B
+B_Constructors --> A_Constructors: B gọi đến Constructor của A
+A_Constructors --> Object_Constructors: A gọi đến Constructor của Object
+Object_Constructors --> A_Constructors: Done, khởi tạo thành công Object
+A_Constructors --> B_Constructors: hiển thị A, sau đó hoản thành khởi tạo object A
+B_Constructors --> new_B: hiển thị B, sau đó hoản thành khởi tạo object C
+new_B --> Main: Khởi tạo object thành công
+
+@enduml

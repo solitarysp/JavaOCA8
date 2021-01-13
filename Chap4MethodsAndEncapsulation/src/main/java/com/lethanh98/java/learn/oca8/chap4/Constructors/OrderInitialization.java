@@ -22,7 +22,6 @@ public class OrderInitialization {
         public static int B = 1;
         static {
             System.out.println("static Initialization class B " + B);
-
         }
         {
             System.out.println("Initialization class B");
