@@ -1,4 +1,4 @@
-package com.lethanh98.java.learn.oca8.chap5.overidFields;
+package com.lethanh98.java.learn.oca8.chap5.overidFieldsAndMethod.OveridFields;
 
 public class OveridFields {
     public static void main(String[] args) {
