@@ -14,6 +14,9 @@ class A {
     public String getName2() throws Exception {
         return "name";
     }
+    public String getName22() throws Exception {
+        return "name";
+    }
 
     public String getName3() {
         return "name";
@@ -36,6 +39,11 @@ class B extends A {
     @Override
     // class con không cần khai báo  Exception
     public String getName2() {
+        return "name";
+    }
+    @Override
+    // class con không cần khai báo  Exception
+    public String getName22() throws RuntimeException {
         return "name";
     }
 
