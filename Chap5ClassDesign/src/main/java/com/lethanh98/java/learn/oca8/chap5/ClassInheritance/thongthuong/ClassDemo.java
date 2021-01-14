@@ -1,4 +1,4 @@
-package com.lethanh98.java.learn.oca8.chap5.extendjavaobject.thongthuong;
+package com.lethanh98.java.learn.oca8.chap5.ClassInheritance.thongthuong;
 
 public class ClassDemo {
 

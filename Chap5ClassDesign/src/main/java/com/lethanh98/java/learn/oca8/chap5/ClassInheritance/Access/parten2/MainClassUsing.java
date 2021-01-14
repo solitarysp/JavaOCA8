@@ -1,6 +1,6 @@
-package com.lethanh98.java.learn.oca8.chap5.Access.parten2;
+package com.lethanh98.java.learn.oca8.chap5.ClassInheritance.Access.parten2;
 
-import com.lethanh98.java.learn.oca8.chap5.Access.parten1.Parten1Public;
+import com.lethanh98.java.learn.oca8.chap5.ClassInheritance.Access.parten1.Parten1Public;
 
 public class MainClassUsing extends Parten1Public {
     public static void main(String[] args) {

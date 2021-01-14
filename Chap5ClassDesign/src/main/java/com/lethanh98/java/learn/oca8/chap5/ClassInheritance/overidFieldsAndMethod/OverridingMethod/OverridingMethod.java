@@ -1,4 +1,4 @@
-package com.lethanh98.java.learn.oca8.chap5.overidFieldsAndMethod.OverridingMethod;
+package com.lethanh98.java.learn.oca8.chap5.ClassInheritance.overidFieldsAndMethod.OverridingMethod;
 
 public class OverridingMethod {
     public static void main(String[] args) {

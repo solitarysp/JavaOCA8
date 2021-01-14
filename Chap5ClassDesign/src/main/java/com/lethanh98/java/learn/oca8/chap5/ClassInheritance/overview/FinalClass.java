@@ -1,4 +1,4 @@
-package com.lethanh98.java.learn.oca8.chap5.overview;
+package com.lethanh98.java.learn.oca8.chap5.ClassInheritance.overview;
 
 public class FinalClass {
 

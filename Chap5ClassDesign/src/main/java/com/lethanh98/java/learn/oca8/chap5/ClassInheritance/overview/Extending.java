@@ -1,4 +1,4 @@
-package com.lethanh98.java.learn.oca8.chap5.overview;
+package com.lethanh98.java.learn.oca8.chap5.ClassInheritance.overview;
 
 import com.lethanh98.java.learn.oca8.chap5.BaseInterface;
 import lombok.extern.slf4j.Slf4j;

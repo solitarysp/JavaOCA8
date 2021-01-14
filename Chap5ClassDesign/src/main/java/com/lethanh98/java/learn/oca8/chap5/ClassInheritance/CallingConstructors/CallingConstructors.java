@@ -1,4 +1,4 @@
-package com.lethanh98.java.learn.oca8.chap5.CallingConstructors;
+package com.lethanh98.java.learn.oca8.chap5.ClassInheritance.CallingConstructors;
 
 public class CallingConstructors {
     public static void main(String[] args) {

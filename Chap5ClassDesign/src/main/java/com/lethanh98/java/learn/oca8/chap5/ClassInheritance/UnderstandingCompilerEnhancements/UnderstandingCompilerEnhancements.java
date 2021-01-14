@@ -1,4 +1,4 @@
-package com.lethanh98.java.learn.oca8.chap5.UnderstandingCompilerEnhancements;
+package com.lethanh98.java.learn.oca8.chap5.ClassInheritance.UnderstandingCompilerEnhancements;
 
 public class UnderstandingCompilerEnhancements {
     public static void main(String[] args) {

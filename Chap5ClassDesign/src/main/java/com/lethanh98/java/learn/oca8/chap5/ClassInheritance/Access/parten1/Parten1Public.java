@@ -1,4 +1,4 @@
-package com.lethanh98.java.learn.oca8.chap5.Access.parten1;
+package com.lethanh98.java.learn.oca8.chap5.ClassInheritance.Access.parten1;
 
 import lombok.Data;
 
