@@ -12,12 +12,51 @@ class HSA {
     public static void show() {
         System.out.printf("A");
     }
+
+    private static void show2() {
+        System.out.printf("A");
+    }
+
+    protected static void show4() {
+        System.out.printf("A");
+    }
+
+    protected void show3() {
+        System.out.printf("A");
+    }
+    public final static void show5() {
+        System.out.printf("show5 ");
+    }
 }
 
 class HSB extends HSA {
     public static String name = "B";
 
+    // OK vì nó đang cùng static, cùng quyền truy cập, cùng tên cùng kiểu trả về
     public static void show() {
+        System.out.printf("HSB show");
+    }
+
+    // OK vì nó đang cùng static, vì class con có quyền truy cập cao hơn class cha, cùng tên cùng kiểu trả về
+    public static void show2() {
+        System.out.printf("HSB show2");
+    }
+
+    // không được vì class cha không phải static
+//    public static void show3() {
+//        System.out.printf("A");
+//    }
+    // không được vì cha là staitc nhưng con không phải static
+/*    public void show4() {
         System.out.printf("A");
     }
+*/
+    public static void show4() {
+        System.out.printf("HSBshow4 ");
+        show();
+    }
+    // là final nên không được hidden
+/*    public final static void show5() {
+        System.out.printf("show5 ");
+    }*/
 }
