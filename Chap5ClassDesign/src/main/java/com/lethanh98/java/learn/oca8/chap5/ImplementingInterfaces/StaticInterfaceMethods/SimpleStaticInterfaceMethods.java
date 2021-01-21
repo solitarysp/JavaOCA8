@@ -21,7 +21,7 @@ interface IC extends IA,IB {
 }
 class ClassImpl1 implements IA {
     public void testErr() {
-        age();
+       // age();
     }
 
     public void testOK() {
