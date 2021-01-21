@@ -21,11 +21,17 @@ class HSA {
         System.out.printf("A");
     }
 
-    protected void show3() {
-        System.out.printf("A");
-    }
     public final static void show5() {
         System.out.printf("show5 ");
+    }
+
+    public static Number show6() {
+        System.out.printf("show5 ");
+        return 1;
+    }
+
+    protected void show3() {
+        System.out.printf("A");
     }
 }
 
@@ -59,4 +65,9 @@ class HSB extends HSA {
 /*    public final static void show5() {
         System.out.printf("show5 ");
     }*/
+
+    public static Integer show6() {
+        System.out.printf("show6 ");
+        return 1;
+    }
 }
