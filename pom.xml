@@ -38,6 +38,12 @@
                 <module>Chap5ClassDesign</module>
             </modules>
         </profile>
+        <profile>
+            <id>Chap6</id>
+            <modules>
+                <module>Chap6Exceptions</module>
+            </modules>
+        </profile>
     </profiles>
     <dependencies>
         <dependency>
