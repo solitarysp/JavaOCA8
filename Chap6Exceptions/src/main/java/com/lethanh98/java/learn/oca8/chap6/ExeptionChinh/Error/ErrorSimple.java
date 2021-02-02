@@ -1,4 +1,4 @@
-package com.lethanh98.java.learn.oca8.chap6.Error;
+package com.lethanh98.java.learn.oca8.chap6.ExeptionChinh.Error;
 
 public class ErrorSimple {
 
